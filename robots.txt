@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /
+
+# Block all crawling since this is just a redirect site
+# The new content is at powerplatformtip.com
+
+Sitemap: https://powerplatformtip.com/sitemap.xml

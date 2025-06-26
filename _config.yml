@@ -1,0 +1,43 @@
+# Jekyll Configuration für lehmann.ws GitHub Pages Redirects
+
+# Site settings
+title: "Redirecting..."
+email: ""
+description: "Redirects from lehmann.ws to powerplatformtip.com"
+baseurl: ""
+url: "https://lehmann.ws"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+# Collections
+collections:
+  redirects:
+    output: true
+    permalink: /:name/
+
+# Exclude from processing
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - vendor
+
+# Default layout
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: redirect
